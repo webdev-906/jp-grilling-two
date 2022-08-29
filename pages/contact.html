@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <title>JP Grilling | Contact</title>
+</head>
+
+<body>
+  <!-- Header with main component navbar and intro text-->
+  <header class="introduction">
+    <nav class="navbar">
+      <a href="index.html">
+        <img src="../images/cooking.png" alt="Cartoon House with heart" />
+      </a>
+
+
+      <h2 class="intro-text small"><span class="text-style">J</span>P <span class="text-style">G</span>rilling</h2>
+      <ul>
+        <li><a class="small" href="../pages/index.html">Home</a></li>
+        <li><a class="small" href="../pages/menu.html">Menu</a></li>
+        <li><a class="small" href="../pages/contact.html">Contact</a></li>
+        <li onclick="myAlert()"><a class="small" href="#">My Plate</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- A section called background-image that wraps around our entire main content tag; this will display our background image
+    then we have our contact-text with an h2, and a paragraph tag -->
+    <div class="background-image">
+      <section class="contact-text">
+        <h2 class="small">Any Sugesstions?</h2>
+        <p class="small">Please submit the form below and we will be in touch shortly!</p>
+      </section>
+
+
+      <!-- Form -->
+      <div class="contact-container">
+        <form name="contact-form" action="#" method="POST">
+          <label class="medium" for="firstname">First Name: <span class="red-symbol small">*</span></label>
+          <input type="text" name="firstname" id="firstname" required>
+          <label class="medium" for="lastname">Last Name: <span class="red-symbol small">*</span></label>
+          <input type="text" name="lastname" id="lastname" required>
+          <label class="medium" for="email">Email: <span class="red-symbol small">*</span></label>
+          <input type="email" name="email" id="email" required>
+          <label class="medium" for="tel">Phone Number: <span class="red-symbol small">*</span></label>
+          <input type="tel" name="tel" id="tel" required>
+          <label class="medium" for="message">Message:</label>
+          <textarea name="message" id="message"></textarea>
+          <input type="submit">
+
+        </form>
+      </div>
+    </div>
+  </main>
+
+<!-- End of contact page; links and icons -->
+  <footer class="end-of-page">
+
+
+    <div class="link-container">
+      <a href="https://instagram.com" target="_blank"><img src="../images/instagram.png" alt="Instagram logo" /></a>
+
+
+      <a href="https://facebook.com" target="_blank">
+        <img src="../images/facebook-app-logo.png" alt="Facebook-app-logo logo" /></a>
+
+
+      <a href="https://twitter.com" target="_blank">
+        <img src="../images/twitter.png" alt="Twitter logo" /></a>
+
+
+
+      <a href="https://snapchat.com" target="_blank">
+        <img src="../images/snapchat.png" alt="Snapchat logo" /></a>
+      <p class="small">Copyright &copy; 2022 JP Grilling All Rights Reserved</p>
+
+
+    </div>
+
+
+
+  </footer>
+  <!-- JavaScript -->
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>

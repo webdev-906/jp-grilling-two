@@ -1,0 +1,415 @@
+
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8d7c4;
+}
+
+/* divider, root default html font-size 16px
+when using rem units divide by 10  */
+html {
+  font-size: 62.5%;
+  height: 101%;
+}
+
+/* Font-sizes; to keep consistency throughtout the page, the classes will be in the HTML */
+.small {
+  font-size: 1.8rem;
+}
+
+.medium {
+  font-size: 3rem; 
+
+}
+
+.large {
+  font-size: 5rem; 
+}
+
+/* Home Page 
+Ends at line: 225 */
+
+/* Video */
+.introduction {
+  max-width: 100%;}
+
+
+
+/* Navbar */
+.navbar {
+  background: #d67f5d;
+  padding: 0.4rem; 
+  position: fixed;
+  width: 100%;
+  /* z-index is used since position fixed places the links behind */
+  z-index: 1;
+}
+
+/* Navbar image */
+.navbar img {
+  position: absolute;
+  height: 4rem;
+  width: 4rem;
+  top: 1%;
+  left: 1%;
+}
+
+/* Jp Grilliing with navbar */
+.intro-text {
+  position: absolute;
+  top: 0.9%;
+  left: 5%;
+  color: #431604
+}
+
+/* Span style */
+.text-style{
+  color: #fff;
+  font-weight: bold;
+}
+
+
+/* Navbar unordered list  */
+.navbar ul {
+  text-align: right;
+  margin-right: 1rem;
+  margin: 0;
+}
+
+/* Nav list items */
+.navbar li {
+  display: inline-block;
+}
+
+/* Navbar links */
+.navbar a {
+  display: block;
+  padding: 0.55rem 2.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #431604;
+  transition: text-shadow 0.14s
+}
+
+
+/* Navbar link hover efffect */
+.navbar a:hover {
+  text-shadow: 0.1rem 0.1rem 0.2rem #000;
+}
+
+
+/* Video */
+.hero-video {
+  width: 100%;
+  overflow: hidden;
+  height: 75rem;
+  object-fit: cover;
+}
+
+/* Text for video */
+.video-text {
+  position: absolute;
+  top: 25%;
+  right: 70.5%;
+  color: #d67f5d;
+  text-shadow: 0.1rem 0.1rem 0.2rem #333;
+}
+
+
+/* Span text style */
+.hero-video span {
+  color: #fff;
+}
+
+
+
+/* Video link style */
+.hero-video a {
+  position: absolute;
+  top: 40%;
+  right: 73.5%;
+  color: white;
+  font-size: 2rem;
+  text-decoration: none;
+  background: #5c4b44;
+  border-radius: 0.4rem;
+  width: 16rem;
+  height: 2.9rem;
+  text-align: center;
+  transition: background-color 0.15s ease-in
+}
+
+
+/* Video link hover effect  */
+.hero-video a:hover {
+  background-color: #fff;
+  color: #5c4b44;
+}
+
+/* About style background */
+.main-content {
+  max-width: 100%;
+  color: #fff;
+  background: #252220
+}
+
+/* About style outside and inside spacing */
+.main-content .about {
+  margin-left: 10px;
+  padding: 15rem;
+}
+
+/* About style inside spacing */
+.about-us-text{
+  padding-bottom: 2rem
+}
+
+/* Paragraph tag style */
+.main-content .about p {
+  line-height: 5rem;
+  text-align: justify;
+
+}
+
+
+/* Link color style */
+.main-content .go-to-menu-page,
+.go-to-contact-page {
+  color: #ff682d;
+  font-weight: bold
+}
+
+/* Inside space and centering content  */
+.main-content .reviews {
+  text-align: center;
+  padding: 3.5rem
+}
+
+/* Background style */
+.testimonal-container {
+  background: #000;
+}
+
+/* Default direction: row */
+.customers {
+  display: flex;
+}
+
+/* Setting style for images */
+.customers img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 9.5rem
+}
+
+/* Centering customer reviews */
+.customer-reviews {
+  text-align: center;
+}
+
+
+/* Centering customer reviews paragraph tag */
+.testimonial-one p,
+.testimonial-two p,
+.testimonial-three p {
+  text-align: center;
+}
+
+/* Adding space inside */
+.testimonial-one,
+.testimonial-two,
+.testimonial-three {
+  padding-bottom: 10rem;
+}
+/* End of home-page */
+
+
+
+/* Menu Page
+Ends at line: 301 */
+
+/* background image wrapped around all product content */
+.bg-image {
+  background: url("../images/resturant-style.jpg") no-repeat center center/ cover fixed;
+}
+
+/* Text style */
+.menu {
+  text-align: center;
+  color: #fff;
+  margin: 0;
+  padding-top: 10rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem #000;
+}
+
+/* Text style */
+.food-category {
+  text-align: center;
+  color: #fff;
+  padding: 5rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem #000;
+}
+
+/* Centering cards */
+.center-cards {
+  text-align: center;
+}
+
+/* Using inline-block for cards to be lined up next to each other */
+.product-card {
+  display: inline-block;
+  margin: 0.5rem;
+  width: 30rem;
+  background-color: #333;
+  color: #fff;
+  height: auto;
+}
+
+/* Setting width to 100% to fit inside card */
+.product-card img {
+  width: 100%;
+  object-fit: cover;
+  height: 30rem;
+}
+
+/* Product-card p style */
+.product-card
+p {
+  text-align: center;
+  padding: 0.8rem
+}
+
+/* Product-card a style, with a transition it will wait the specified seconds once the mouse hovers over */
+.product-card a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: #65331f;
+  margin: 1.7rem;
+  transition: background-color 0.17s, color 0.15s
+}
+
+
+.product-card a:hover {
+  background-color: #fff;
+  color: #5e260f; 
+}
+/* End of Menu page */
+
+
+
+/* Contact page
+Ends at line: 414 */
+/* Any Sugesstions style  */
+.contact-text {
+  text-align: center;
+  color: #fff;
+  padding-top: 6rem;
+  text-shadow: 0.1rem 0.1rem 2rem #000
+}
+
+
+/* Background image wrapped around form */
+.background-image {
+  background: url("../images/steak-on-fire.jpg") no-repeat center center/cover;
+  height: 100rem;
+}
+
+/* container that's placed in the center with it's styles */
+.contact-container {
+  margin: auto;
+  background: #d67f5d;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0.1rem 0.1rem 0.7rem #000;
+  max-width: 75%;
+  height: 80rem;
+}
+
+/* Adding space inside form */
+form {
+  padding: 2rem;
+}
+
+/* Adding space inside label, input, textarea  */
+label, input, textarea {
+  padding: 2rem
+}
+
+/* Changing default inline to block */
+label,
+input,
+textarea {
+  display: block;
+  width: 95%;
+}
+
+
+/* Adding color to not leave empty ruleset since the only declaration was font-size */
+form label {
+  color: #333
+
+}
+
+/* Removing the outline on input and textarea when the user clicks into the input */
+form input,
+textarea {
+  outline: none;
+}
+
+
+/* Changing the asterick to red */
+form label span {
+  color: red;
+}
+
+/* Button styling */
+form input[type="submit"] {
+  margin-top: 1.5rem;
+  width: 10rem;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+
+/* Button hover effect */
+form input[type="submit"]:hover {
+  color: #5e260f;
+  background-color: #fed12d;
+
+
+}
+
+
+/* Removing resize */
+form textarea {
+  resize: none;
+}
+
+/* Link styling */
+.link-container,
+.end-of-page p {
+  text-align: center;
+  padding: 3rem
+}
+
+/* Link icons */
+.end-of-page img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1.5rem;
+}
+
+/* Hover effect rotating sideways; rotateX would be up and down */
+.end-of-page img:hover {
+  transform: rotateY(360deg);
+  transition: all 2s linear;
+}
+/* End of Contact page */
