@@ -233,7 +233,10 @@ Ends at line: 301 */
 
 /* background image wrapped around all product content */
 .bg-image {
-  background: url("../images/resturant-style.jpg") no-repeat center center/ cover fixed;
+  /* background: url("../images/resturant-style.jpg") no-repeat center center/ cover fixed; */
+  background-image: linear-gradient(215deg, #252220 50%, #bb7c63 50%);
+  background-attachment: fixed;
+  
 }
 
 /* Text style */
